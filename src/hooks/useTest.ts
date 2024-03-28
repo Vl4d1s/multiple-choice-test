@@ -55,11 +55,14 @@ const useTest = () => {
       const totalQuestions = correctAnswers.length;
       let correctCount = 0;
 
+      const correctAnswersMap = new Map(
+        correctAnswers.map((ca) => [ca.questionId, ca.correctAnswerId])
+      );
+
       userAnswers.forEach((userAnswer) => {
-        const correct = correctAnswers.find(
-          (ca) => ca.questionId === userAnswer.questionId
-        );
-        if (correct && userAnswer.answerId === correct.correctAnswerId) {
+        if (
+          userAnswer.answerId === correctAnswersMap.get(userAnswer.questionId)
+        ) {
           correctCount++;
         }
       });
