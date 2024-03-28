@@ -1,0 +1,9 @@
+.score-container {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.score-container p {
+  margin: 0.5em 0;
+}

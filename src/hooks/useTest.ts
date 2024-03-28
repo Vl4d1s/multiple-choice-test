@@ -50,7 +50,7 @@ const useTest = () => {
     userAnswers: UserAnswer[]
   ): Promise<number> => {
     try {
-      const res = await fetch("/correct_answers.json");
+      const res = await fetch("/correct-answers.json");
       const correctAnswers: correctAnswer[] = await res.json();
       const totalQuestions = correctAnswers.length;
       let correctCount = 0;

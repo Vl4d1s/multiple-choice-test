@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "question": "What is the capital of France?"
+    "question": "1 + 1"
   },
   {
     "id": 2,
-    "question": "Which element has the chemical symbol 'O'?"
+    "question": "2 + 1"
   },
   {
     "id": 3,
-    "question": "What is the largest planet in our solar system?"
+    "question": "3 + 2"
   },
   {
     "id": 4,
-    "question": "Who wrote 'Romeo and Juliet'?"
+    "question": "4 - 1"
   },
   {
     "id": 5,
-    "question": "What year did the Titanic sink?"
+    "question": "2 + 2"
   }
 ]
